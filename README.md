@@ -6,7 +6,7 @@ Este proyecto permite generar etiquetas en formato PDF a partir de una lista de 
 
 - Generación automática de etiquetas a partir de una lista proporcionada por el usuario.
 - Salida en PDF con etiquetas distribuidas en:
-  - **4 columnas × 20 filas** (80 etiquetas por hoja).
+  - **3 columnas × 9 filas** (27 etiquetas por hoja).
 - Soporte para **texto simple** o **códigos de barras (Code128)**.
 - Estilo simple y profesional, listo para impresión.
 - Interfaz web básica para ingreso manual de códigos.
