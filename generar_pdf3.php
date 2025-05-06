@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $col = 0;
 
     foreach ($lines as $index => $line) {
-        list($inventario, $serie) = array_map('trim', explode(',', $line));
+        list($inventario, $serie) = array_map('trim', preg_split('/[\t,]/', $line));
 
         $barcode = $generator->getBarcode($serie, $generator::TYPE_CODE_128);
         $file = tempnam(sys_get_temp_dir(), 'barcode') . '.png';
