@@ -49,12 +49,18 @@ composer install
 
 ```
 /
-├── index.html              # Formulario de ingreso
-├── generar_pdf.php         # Script principal que genera el PDF (solo texto)
-├── generar_pdf_con_barras.php # (opcional) Script para generar con código de barras
+├── index.html              # Página principal con enlaces a los generadores
+├── index1.php              # Obsoleto o prueba, sin funcionalidad principal
+├── index2.php              # Formulario para etiquetas de solo texto
+├── index3.php              # Formulario para etiquetas con un solo código de barras (serie) y texto (inventario)
+├── generar_pdf.php         # Genera etiquetas con doble código de barras (serie + inventario)
+├── generar_pdf2.php        # Genera etiquetas de solo texto, múltiples por página
+├── generar_pdf3.php        # Genera etiquetas con código de barras (serie) y texto (inventario)
+├── composer.json           # Definición de dependencias PHP (ej. FPDF, Barcode Generator)
+├── composer.lock           # Versión exacta de las dependencias instaladas
 ├── vendor/                 # Dependencias instaladas por Composer
-├── composer.json           # Definición de dependencias
-└── README.md               # Este archivo
+└── README.md               # Documentación del proyecto
+
 ```
 
 ## 📄 Licencia
